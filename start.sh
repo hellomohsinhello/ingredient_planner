@@ -29,3 +29,23 @@ docker-compose run --rm artisan key:generate
 # Migrate the database
 echo "Migrating the database..."
 docker-compose run --rm artisan migrate
+
+# Seed the database
+echo "Seeding the database..."
+docker-compose run --rm artisan db:seed
+
+# cache the config
+echo "Caching the config..."
+docker-compose run --rm artisan config:cache
+
+# cache the routes
+echo "Caching the routes..."
+docker-compose run --rm artisan route:cache
+
+# cache the views
+echo "Caching the views..."
+docker-compose run --rm artisan view:cache
+
+# cache events
+echo "Caching events..."
+docker-compose run --rm artisan event:cache
