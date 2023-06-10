@@ -20,6 +20,9 @@ services:
       - mysql
     networks:
       - laravel
+#    entrypoint: [ 'sh', './start.sh' ]
+#    command:
+#        -   /bin/sh start.sh
 
   mysql:
     image: mariadb:10.6
@@ -63,7 +66,6 @@ services:
     depends_on:
       - php
     entrypoint: [ 'composer']
-    command: bash -c "./start.sh"
     networks:
       - laravel
 
