@@ -25,65 +25,21 @@ Follow these steps to set up and run the Laravel project:
    cd ingredient_planner
    ```
    
-3. Copy the contents of the `.env.example` file into a new file named `.env`:
+3. Make start.sh file executable:
 
    ```bash
-    cp .env.example .env
-    ```
-
-4. Update the environment variables in the .env file as needed.
-5. Build the Docker images:
-
-   ```bash
-   docker-compose build
+   chmod +x start.sh
    ```
-   
-6. Run the Docker app container:
+
+4. Run start.sh file:
 
    ```bash
-    docker compose up -d app
-    ```
-   
-7. Install composer dependencies:
- 
-   ```bash
-   docker-compose run --rm composer install
+   ./start.sh
    ```
-   
-8. Generate an application key:
 
-   ```bash
-    docker-compose run --rm artisan key:generate
-    ```
-   
-9. Run database migrations:
+5. Access the RESTful HTTP API at `http://localhost:8000`.
 
-   ```bash
-   docker-compose run --rm artisan migrate
-   ```
-    
-10. Seed the database (optional):
 
-    ```bash
-    docker-compose run --rm artisan db:seed
-    ```
-    
-11. Cache the configuration (optional):
-
-    ```bash
-    docker-compose run --rm artisan config:cache
-    ```
-    
-12. Cache the routes (optional):
-
-    ```bash
-    docker-compose run --rm artisan route:cache
-    ```
-    
-13. Cache the routes (optional):
-
-    ```bash
-    docker-compose run --rm artisan route:cache
-    ```
-    
-14. Access the application in a browser at `http://localhost:8000`.
+## API Documentation
+Access Postman Collection (These are collections of endpoints) at
+`https://api.postman.com/collections/3423792-149886f1-8c8a-4764-99a2-13232e18d184?access_key=PMAT-01H2P7D2CJTRH0R951TBZB26QS`

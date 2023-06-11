@@ -2,7 +2,7 @@
 
 # Build container
 echo "Building containers..."
-sudo docker-compose build
+sudo docker-compose build app
 
 # Copy .env.example to .env
 echo "Copying .env.example to .env..."
