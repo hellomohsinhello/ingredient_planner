@@ -37,7 +37,7 @@ Follow these steps to set up and run the Laravel project:
    ./start.sh
    ```
 
-5. Access the RESTful HTTP API at `http://localhost:8000`.
+5. Access the RESTful HTTP API at `http://localhost:8080`.
 
 
 ## API Documentation
