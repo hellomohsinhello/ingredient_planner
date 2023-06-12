@@ -6,6 +6,7 @@ sudo docker-compose build app
 
 # Copy .env.example to .env
 echo "Copying .env.example to .env..."
+cp .env.example .env
 
 # Start MySQL container
 docker-compose up -d mysql
